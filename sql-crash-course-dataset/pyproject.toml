@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sql-crash-course-dataset"
+version = "1.0.0"
+description = ""
+authors = ["awakim"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+faker = "^30.8.2"
+pyarrow = "^18.0.0"
+duckdb = "^1.1.2"
+pydantic = "^2.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
