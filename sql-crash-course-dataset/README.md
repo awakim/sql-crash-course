@@ -31,18 +31,17 @@ orders.parquet   products.parquet users.parquet
 
 ```bash
 duckdb -c "DESCRIBE SELECT * FROM 'dataset/users.parquet';"
-┌─────────────┬─────────────┬─────────┬─────────┬─────────┬─────────┐
-│ column_name │ column_type │  null   │   key   │ default │  extra  │
-│   varchar   │   varchar   │ varchar │ varchar │ varchar │ varchar │
-├─────────────┼─────────────┼─────────┼─────────┼─────────┼─────────┤
-│ user_id     │ BIGINT      │ YES     │         │         │         │
-│ username    │ VARCHAR     │ YES     │         │         │         │
-│ email       │ VARCHAR     │ YES     │         │         │         │
-│ first_name  │ VARCHAR     │ YES     │         │         │         │
-│ last_name   │ VARCHAR     │ YES     │         │         │         │
-│ address     │ VARCHAR     │ YES     │         │         │         │
-│ created_at  │ TIMESTAMP   │ YES     │         │         │         │
-└─────────────┴─────────────┴─────────┴─────────┴─────────┴─────────┘
 ```
+
+| column_name | column_type | null | key | default | extra |
+|-------------|-------------|------|-----|---------|-------|
+| user_id     | BIGINT      | YES  |     |         |       |
+| username    | VARCHAR     | YES  |     |         |       |
+| email       | VARCHAR     | YES  |     |         |       |
+| first_name  | VARCHAR     | YES  |     |         |       |
+| last_name   | VARCHAR     | YES  |     |         |       |
+| address     | VARCHAR     | YES  |     |         |       |
+| created_at  | TIMESTAMP   | YES  |     |         |       |
+
 
 Now, see you in the [course](../README.md)! 🚀
